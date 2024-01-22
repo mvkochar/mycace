@@ -1,0 +1,64 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 224px;
+    padding-right: 224px;
+    border-bottom: 1px solid lightgray;
+}
+
+.header-location {
+    width: 185px;
+    margin-top: -5px;
+    margin-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 54px;
+    background: #FFF2F2 url("/public/images/location.svg") no-repeat;
+    background-position: 20px center;
+    border-radius: 36px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: #8E4A4E;
+}
+
+.header-nav {
+    list-style-type: none;
+    gap: 30px;
+}
+
+.header-nav-item {
+    line-height: 1.4;
+}
+
+.header-nav-link {
+    font-size: 18px;
+    color: #000000;
+}
+
+.header-nav-link:hover,
+.header-actions-account:hover {
+    color: #FF7F50;
+}
+
+.header-actions {
+    gap: 27.5px;
+}
+
+.header-actions-info {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header-actions-account {
+    display: block;
+    padding-left: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url("/public/images/account.svg") no-repeat;
+    background-position: 0;
+    font-size: 16px;
+    color: #43607C;
+}

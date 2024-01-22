@@ -1,0 +1,49 @@
+.home-main {
+    margin-top: 40px;
+}
+
+.home-main-title {
+    max-width: 463px;
+    font-family: 'Yeseva One', serif;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.home-main-desc {
+    max-width: 463px;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #43607C;
+}
+
+.home-main-fm {
+    width: 842px;
+    height: 50px;
+    margin-top: 30px;
+    border: 1px solid #DFDFDF;
+}
+
+.home-main-fm input {
+    width: 84%;
+    height: 48px;
+    padding-top: 5px;
+    padding-left: 18px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #43607C;
+}
+
+.home-main-fm button {
+    width: 132px;
+    height: 47px;
+    margin-left: 2px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #FDAD6D;
+    border: 1px solid #FDAD6D;
+    font-size: 18px;
+    color: #8E4A4E;
+}
