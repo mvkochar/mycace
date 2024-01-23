@@ -47,3 +47,97 @@
     font-size: 18px;
     color: #8E4A4E;
 }
+
+.home-main-tags {
+    max-width: 818px;
+    margin-top: 30px;
+   
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags-else {
+    width: 178px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #8E4A4E;
+}
+
+.home-main-categories {
+    margin-top: 65px;
+}
+
+.home-main-categories .main-categories-actions {
+    gap: 5px;
+    margin-left: 93%;
+}
+
+.home-main-categories .main-categories-actions button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding-top: 6px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.home-main-categories .main-categories-box {
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.home-main-categories .categories-item-title {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #43607C;
+}
+
+.home-bl {
+    margin-top: 80px;
+}
+
+.home-bl-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 35px;
+    color: #000000;
+}
+
+.home-bl-actions {
+    gap: 40px;
+} 
+
+.home-bl-all {
+    display: block;
+    width: 158px;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    background-color: #DCEBF8;
+    border: 1px solid #DCEBF8;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #43607C;
+}
+
+.home-bl-arrows {
+    gap: 5px;
+}
+
+.home-bl-arrows button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding-top: 6px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
