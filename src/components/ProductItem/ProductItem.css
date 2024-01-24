@@ -1,0 +1,34 @@
+.product-item {
+    max-width: 280px;
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+.product-item-info {
+  
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-bottom: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+.product-item-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #A63A50;
+}
+
+.product-item-title,
+.product-item-fillings {
+    width: 250px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.product-item-fillings {
+    color: #84A6C2;
+}

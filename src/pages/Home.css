@@ -141,3 +141,80 @@
     border: none;
     cursor: pointer;
 }
+
+.home-bl-box {
+    margin-top: 30px;
+}
+
+.home-registration {
+    margin-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #DCEBF8;
+}
+
+.home-registration-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 35px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+}
+
+.home-registration-desc {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #43607C;
+}
+
+.home-registration-btn {
+    display: block;
+    width: 280px;
+    margin: 20px auto;
+    margin-bottom: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #43607C;
+    border: 1px solid #43607C;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.confectioners-item {
+    max-width: 475px;
+    padding: 15px;
+    gap: 25px;
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+.confectioners-item-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #43607C;
+}
+
+.confectioners-item-reviews {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #A63A50;
+}
+
+.confectioners-item-desc {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #43607C;
+}
+
+.confectioners-item-tags {
+    margin-top: 20px;
+    gap: 5px;
+}
