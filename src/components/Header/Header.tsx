@@ -14,7 +14,7 @@ const Header = () => {
             <nav>
                 <ul className="header-nav d-f">
                     <li className="header-nav-item">
-                        <a href="#" className="header-nav-link">Десерти</a>
+                        <Link to="desserts" className="header-nav-link">Десерти</Link>
                     </li>
                     <li className="header-nav-item">
                         <a href="#" className="header-nav-link">Кращі кондитери</a>

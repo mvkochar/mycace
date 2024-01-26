@@ -1,0 +1,36 @@
+.desserts-search-fm {
+    width: 100%;
+    height: 53px;
+    margin-top: 40px;
+    padding-left: 20px;
+    border: 1px solid #DFDFDF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.desserts-search-fm input {
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #C2C2C2; 
+}
+
+.desserts-search-fm input::placeholder {
+    color: #C2C2C2; 
+}
+
+.desserts-search-fm button{
+    width: 132px;
+    height: 50px;
+    margin-left: 13px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #FDAD6D;
+    border: 1px solid #FDAD6D;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    color: #8E4A4E;
+}

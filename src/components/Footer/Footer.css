@@ -1,0 +1,177 @@
+.footer {
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 224px;
+    padding-right: 224px;
+    background-color: #011936;
+}
+
+.footer .header-location {
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.footer-list {
+    list-style-type: none;
+    gap: 30px;
+}
+
+.footer-list-item {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.footer-list-item a {
+    font-weight: 18px;
+    color: #FFFFFF;
+}
+
+.footer-list-item a:hover {
+    color: #FF7F50;
+    border-bottom: 1px solid #FF7F50;
+}
+
+.footer-rules {
+    display: block;
+    width: 266px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-connect {
+    display: block;
+    width: 266px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #011936;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    color: #011936;
+}
+
+.footer-rights {
+    width: 129px;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.footer-social {
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.connect-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 30px;
+    color: #011936;
+}
+
+.connect-exit {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.connect-fm {
+    margin-top: 40px;
+}
+
+.connect-fm .input-bl {
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.connect-fm .input-bl:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.connect-fm label {
+    display: block;
+    width: 220px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #43607C;
+}
+
+.connect-fm input {
+    display: block;
+    width: 360px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border: 1px solid #DFDFDF;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+    color: #43607C;
+}
+
+.connect-fm input::placeholder {
+    color: #43607C;
+}
+
+.connect-fm .email-desc {
+    width: 220px;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #84A6C2;
+}
+
+.connect-fm .message-bl {
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.connect-fm textarea {
+    width: 360px;
+    height: 160px;
+    padding-top: 8px;
+    padding-left: 20px;
+    border: 1px solid #DFDFDF;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+    color: #43607C;
+}
+
+.connect-fm .send-btn,
+.connect-fm .cancel-btn {
+    display: block;
+    width: 620px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.connect-fm .send-btn {
+    margin-top: 40px;
+    background-color: #A63A50;
+    border: 1px solid #A63A50;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.connect-fm .cancel-btn {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid #84A6C2;
+    font-weight: 400;
+    font-size: 16px;
+    color: #43607C;
+}
