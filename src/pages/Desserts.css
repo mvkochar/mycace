@@ -34,3 +34,131 @@
     font-size: 18px;
     color: #8E4A4E;
 }
+
+.desserts-main  {
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.desserts-main-filters {
+    flex-shrink: 0;
+     
+}
+
+.filters-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 24px;
+    color: #011936;
+}
+
+.filters-fm {
+    margin-top: 30px;
+}
+
+.filters-fm-bl:nth-child(2) {
+    margin-top: 30px;
+}
+
+.filters-fm-bl .fm-bl-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #011936;
+}
+
+.filters-fm-bl .check-bl {
+    gap: 13.75px;
+    margin-bottom: 14px;
+}
+
+.filters-fm-bl .last-bl {
+    margin-bottom: 0;
+}
+
+.filters-fm-bl .check-bl input {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.filters-fm-bl .check-bl label {
+    font-size: 16px;
+    color: #011936;
+}
+
+.desserts-main-tags {
+    gap: 10px;
+}
+
+.desserts-main-box {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.desserts-more-btn {
+    width: 1180px;
+    margin-top: 30px;
+    padding-top: 15.62px;
+    padding-bottom: 15.62px;
+    background: transparent url("/public/images/more.svg") no-repeat;
+    background-position: 41% center;
+    border: 1px solid #84A6C2;
+    border-radius: 49px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #43607C;
+}
+
+.desserts-main-pages {
+    width: fit-content;
+    margin: 40px auto;
+    margin-bottom: 0;
+    gap: 10px;
+}
+
+.desserts-main-pages .pages-action {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-top: 3px;
+    padding-top: 11px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.desserts-main-pages .pages-item {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 4px;
+    background-color: transparent;
+    border: 1px solid #FFE2CA;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #5E2D07;
+}
+
+.desserts-main-pages .pages-item__active {
+    background-color: #FDAD6D;
+    border: 1px solid #FDAD6D;
+    font-weight: 700;
+    color: #011936;
+}
+
+.desserts-main-pages .pages-more {
+    display: block;
+    width: 15px;
+    height: 22px;
+    margin-top: 26px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #5E2D07;
+}

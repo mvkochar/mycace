@@ -1,9 +1,20 @@
 .tag {
     padding: 8px 15px;
-    background-color: #FFF2F2;
+    background: #FFF2F2;
     border-radius: 40px;
     cursor: pointer;
     font-family: Verdana, sans-serif;
     font-size: 14px;
     color: #8E4A4E;
+}
+
+.tag__active {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 35px;
+    padding-right: 15px;
+    background: #A63A50 url("/public/images/active.svg") no-repeat;
+    background-position: 10px;
+    border: 1px solid #A63A50;
+    color: #FFFFFF;
 }

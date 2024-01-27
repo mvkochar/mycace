@@ -3,11 +3,12 @@ import './Tag.css'
 
 type TagProps = {
     title: string
+    isActive?: boolean
 }
 
-const Tag = ({title}:TagProps) => {
+const Tag = ({title, isActive = false}:TagProps) => {
   return (
-    <div className='tag'>{title}</div>
+    <div className={isActive ? 'tag tag__active' : 'tag' }>{title}</div>
   )
 }
 
