@@ -17,7 +17,7 @@ const Header = () => {
                         <Link to="desserts" className="header-nav-link">Десерти</Link>
                     </li>
                     <li className="header-nav-item">
-                        <a href="#" className="header-nav-link">Кращі кондитери</a>
+                        <Link to="confectioners" className="header-nav-link">Кращі кондитери</Link>
                     </li>
                     <li className="header-nav-item">
                         <a href="#" className="header-nav-link">Корисні статті</a>

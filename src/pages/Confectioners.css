@@ -1,0 +1,19 @@
+.confectioners-tags {
+    margin-top: 40px;
+}
+
+.confectioners-bl {
+    margin-top: 40px;
+}
+
+.confectioners-bl .home-bl-title {
+    width: fit-content;
+    margin-left: 0;
+    font-size: 24px;
+
+}
+
+.confectioners-bl-box {
+    margin-top: 23px;
+    gap: 10px;
+}

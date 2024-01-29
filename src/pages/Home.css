@@ -19,7 +19,7 @@
 }
 
 .home-main-fm {
-    width: 842px;
+    width: 100%;
     height: 50px;
     margin-top: 30px;
     border: 1px solid #DFDFDF;
@@ -106,9 +106,10 @@
 }
 
 .home-bl-title {
+    margin-left: 280px;
     font-family: 'Yeseva One', serif;
     font-size: 35px;
-    color: #000000;
+    color: #011936;
 }
 
 .home-bl-actions {

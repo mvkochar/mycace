@@ -162,3 +162,26 @@
     font-size: 18px;
     color: #5E2D07;
 }
+
+.desserts-search-result {
+    margin-top: 40px;
+    gap: 15px;
+}
+
+.desserts-search-query {
+    font-weight: 700;
+    font-size: 16px;
+    color: #43607C;
+}
+
+.desserts-search-close {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.desserts-search-count {
+    font-size: 18px;
+    color: #84A6C2;
+}

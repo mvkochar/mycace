@@ -1,0 +1,39 @@
+.confectioner-item {
+    flex-direction: column;
+    width: 298px;
+    height: 479px;
+    padding: 48px 0;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+.confectioner-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #43607C;
+}
+
+.confectioner-item-reviews {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #A63A50;
+    border-bottom: 1px soid #A63A50;
+}
+
+.confectioner-item-desc {
+    width: 240px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 14px;
+    color: #43607C;
+}
+
+.confectioner-item-tags {
+    gap: 2px;
+    width: fit-content;
+    margin: 0 auto;
+}
