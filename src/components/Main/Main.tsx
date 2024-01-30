@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from '../../pages/Home'
 import Desserts from '../../pages/Desserts'
 import Confectioners from '../../pages/Confectioners'
+import SingleProduct from '../../pages/SingleProduct'
 
 const Main = () => {
   return (
@@ -18,6 +19,10 @@ const Main = () => {
         <Route
           path='confectioners'
           element={<Confectioners/>}
+        />
+        <Route
+          path='product'
+          element={<SingleProduct/>}
         />
     </Routes>
   )

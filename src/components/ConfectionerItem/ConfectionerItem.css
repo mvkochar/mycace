@@ -32,8 +32,48 @@
     color: #43607C;
 }
 
+.product-confectioner {
+    margin-top: 80px;
+}
+
+.product-confectioner-about {
+    gap: 50px;
+}
+
+.product-confectioner-info {
+    gap: 10px;
+}
+
+.product-confectioner-name {
+    font-weight: 700;
+    font-size: 20px;
+    color: #43607C;
+}
+
+.product-confectioner-city {
+    margin-top: 2px;
+    font-size: 14px;
+    color: #84A6C2;
+}
+
+.product-confectioner-link {
+    display: block;
+    width: 259px;
+    margin-top: 15px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    background-color: #FDAD6D;
+    border: 1px solid #FDAD6D;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #5E2D07;
+}
+
 .confectioner-item-tags {
     gap: 2px;
     width: fit-content;
     margin: 0 auto;
 }
+

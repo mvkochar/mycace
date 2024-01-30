@@ -1,0 +1,119 @@
+.product-main {
+    margin-top: 80px;
+    padding-right: 100px;
+}
+
+.product-main-images {
+    gap: 20px;
+}
+
+.product-main-images .images-min-bl {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-main-images .images-action-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.product-main-tags {
+    gap: 5px;
+}
+
+.product-main-title,
+.product-main-price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.product-main-title {
+    margin-top: 15.5px;
+    color: #43607C;
+}
+
+.product-main-price {
+    margin-top: 25px;
+    color: #A63A50;
+}
+
+.product-main-info {
+    margin-top: 15px;
+    gap: 10px;
+    font-size: 14px;
+    color: #43607C;
+}
+
+.product-main-info .info-pattern {
+    width: 7px;
+    height: 7px;
+    background-color: #FDAD6D;
+    border-radius: 100px;
+}
+
+.product-main-desc {
+    max-width: 800px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #43607C;
+}
+
+.product-main-actions {
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.product-main-actions .params-btn,
+.product-main-actions .contacts-btn {
+    display: block;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-main-actions .params-btn {
+    width: 232px;
+    background-color: #A63A50;
+    border: 1px solid #A63A50;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.product-main-actions .contacts-btn {
+    width: 227px;
+    background-color: transparent;
+    border: 1px solid #84A6C2;
+    font-weight: 400;
+    color: #43607C;
+}
+
+.product-main-actions .likes-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.product-confectioner-tags {
+    margin-top: 30px;
+    margin-bottom: 22px;
+    gap: 5px;
+}
+
+.product-confectioner-desc {
+    max-width: 696px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #43607C;
+}
+
+.product-confectioner-desc:last-child {
+    margin-bottom: 0;
+}

@@ -20,7 +20,7 @@
 
 .home-main-fm {
     width: 100%;
-    height: 50px;
+    height: 51px;
     margin-top: 30px;
     border: 1px solid #DFDFDF;
 }
@@ -38,8 +38,8 @@
 
 .home-main-fm button {
     width: 132px;
-    height: 47px;
-    margin-left: 2px;
+    height: 48px;
+    margin-left: 3px;
     padding-top: 14px;
     padding-bottom: 14px;
     background-color: #FDAD6D;
@@ -106,7 +106,6 @@
 }
 
 .home-bl-title {
-    margin-left: 280px;
     font-family: 'Yeseva One', serif;
     font-size: 35px;
     color: #011936;
