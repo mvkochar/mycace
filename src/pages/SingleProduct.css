@@ -100,6 +100,10 @@
     cursor: pointer;
 }
 
+.product-confectioner {
+    gap: 80px;
+}
+
 .product-confectioner-tags {
     margin-top: 30px;
     margin-bottom: 22px;
@@ -116,4 +120,63 @@
 
 .product-confectioner-desc:last-child {
     margin-bottom: 0;
+}
+
+.product-reviews {
+    flex: 1;
+}
+
+.product-reviews-caption  {
+    gap: 20px;
+}
+
+.product-reviews-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 35px;
+    color: #011936;
+}
+
+.product-reviews-add {
+    display: block;
+    width: 190px;
+    padding-left: 54px;
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+    background: #FFF2F2 url("/public/images/plus.svg") no-repeat;
+    background-position: 20px center;
+    border: 1px solid #FFF2F2;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    color: #A63A50;
+}
+
+.product-reviews-actions {
+    gap: 28px;
+}
+
+.product-reviews-all {
+    display: block;
+    width: 158px;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    background-color: #DCEBF8;
+    border-radius: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #43607C;
+}
+
+.product-reviews-actions button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.product-reviews-content {
+    margin-top: 41px;
+    flex-direction: column;
+    gap: 40px;
 }
