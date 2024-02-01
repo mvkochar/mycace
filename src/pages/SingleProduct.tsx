@@ -4,6 +4,7 @@ import Tag from '../components/Tag/Tag'
 import ReviewItem from '../components/ReviwItem/ReviewItem'
 import { DessertsList } from '../components/ProductsList/ProductsList'
 import ProductItem from '../components/ProductItem/ProductItem'
+import { Link } from 'react-router-dom'
 
 const SingleProduct = () => {
 
@@ -72,7 +73,7 @@ const SingleProduct = () => {
                                     <div className="product-confectioner-name">Інна Пономаренко</div>
                                     <div className="product-confectioner-city">Київ</div>
                                 </div>
-                                <a href="#" className="product-confectioner-link">Перейти на сторінку</a>
+                                <Link to = '/confectioner' className="product-confectioner-link">Перейти на сторінку</Link>
                             </div>
                         </div>
                         <div className="product-confectioner-tags d-f">

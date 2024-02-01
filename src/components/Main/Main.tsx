@@ -4,6 +4,7 @@ import Home from '../../pages/Home'
 import Desserts from '../../pages/Desserts'
 import Confectioners from '../../pages/Confectioners'
 import SingleProduct from '../../pages/SingleProduct'
+import Confectioner from '../../pages/Confectioner'
 
 const Main = () => {
   return (
@@ -23,6 +24,10 @@ const Main = () => {
         <Route
           path='product'
           element={<SingleProduct/>}
+        />
+        <Route
+          path='confectioner'
+          element={<Confectioner/>}
         />
     </Routes>
   )

@@ -1,0 +1,175 @@
+.confectioner-main {
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.confectioner-main-tabs .main-tabs-btn {
+    display: block;
+    width: 280px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: 1px solid #C8E6FF;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    color: #43607C;
+}
+
+.confectioner-main-tabs .main-tabs-btn:last-child {
+    margin-top: 10px;
+}
+
+.confectioner-main-tabs .tabs-btn__active {
+    background-color: #43607C;
+    border: 1px solid #43607C;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.confectioner-main-about {
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.confectioner-main-city {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #84A6C2;
+}
+
+.confectioner-main-name,
+.confectioner-main-reviews .main-reviews-title {
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.2;
+    color: #011936;
+}
+
+.confectioner-main-contact {
+    width: 268px;
+    margin-top: 20px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    background-color: #A63A50;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.confectioner-main-desc {
+    max-width: 1152px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #43607C;
+}
+
+.confectioner-main-desc:last-child {
+    margin-bottom: 0;
+}
+
+.confectioner-main-reviews {
+    margin-top: 80px;
+}
+
+.confectioner-main-reviews .main-reviews-content {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-modal-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 30px;
+    color: #011936;
+}
+
+.contact-modal-exit {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-modal-info {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-modal-info .info-bl {
+    gap: 20px;
+}
+
+.contact-modal-info .info-bl-title {
+    width: 75px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #011936;
+}
+
+.contact-modal-info .info-bl-desc {
+    font-size: 14px;
+    color: #011936;
+}
+
+.contact-modal-delivery {
+    margin-top: 30px;
+}
+
+.contact-modal-delivery .delivery-title,
+.contact-modal-payment .payment-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #011936;
+}
+
+.contact-modal-delivery .delivery-list {
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 26px;
+}
+
+.contact-modal-delivery .delivery-list li {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #011936;
+}
+
+.contact-modal-payment {
+    margin-top: 30px;
+}
+
+.contact-modal-payment .payment-desc {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #011936;
+}
+
+.contact-modal-social {
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.contact-modal-write {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: #A63A50;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}

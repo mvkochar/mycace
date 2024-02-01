@@ -1,7 +1,3 @@
-.review-item {
-    width: 696px;
-}
-
 .review-item-caption {
     gap: 10px;
 }
@@ -16,6 +12,14 @@
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: #84A6C2;
+}
+
+.review-item-product {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #A63A50;
 }
 
 .review-item-desc {
