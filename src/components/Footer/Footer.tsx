@@ -34,7 +34,7 @@ const Footer = () => {
         <ul className="footer-list d-f">
           <li className="footer-list-item"><Link to="desserts">Десерти</Link></li>
           <li className="footer-list-item"><Link to="confectioners">Кращі кондитери</Link></li>
-          <li className="footer-list-item"><a href="#">Корисні статті</a></li>
+          <li className="footer-list-item"><Link to="articles">Корисні статті</Link></li>
         </ul>
       </nav>
       <div>

@@ -20,7 +20,7 @@ const Header = () => {
                         <Link to="confectioners" className="header-nav-link">Кращі кондитери</Link>
                     </li>
                     <li className="header-nav-item">
-                        <a href="#" className="header-nav-link">Корисні статті</a>
+                        <Link to='articles' className="header-nav-link">Корисні статті</Link>
                     </li>
                 </ul>
             </nav>

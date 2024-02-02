@@ -1,0 +1,50 @@
+.articles-main {
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.articles-main-filters {
+    flex-basis: 252px;
+    flex-shrink: 0;
+}
+
+.articles-main-filters .filters-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #011936;
+}
+
+.articles-main-filters .filters-subtitle {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #011936;
+}
+
+.articles-main-filters .filters-box {
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 11.75px;
+}
+
+.articles-main-filters .check-bl {
+    gap: 10px;
+}
+
+.articles-main-filters .check-bl input {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.articles-main-filters .check-bl label {
+    display: block;
+    font-size: 16px;
+    color: #011936;
+}
+
+.articles-main-box {
+    flex-wrap: wrap;
+    gap: 30px;
+}

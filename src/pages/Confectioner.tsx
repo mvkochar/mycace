@@ -222,7 +222,7 @@ const Confectioner = () => {
                     itemWidth='1152px'
                   />
                 </div>
-                <button className='desserts-more-btn'>Більше смаколиків</button>
+                <button className='desserts-more-btn'>Більше відгуків</button>
                 <div className="desserts-main-pages d-f">
                   <button className='pages-action'><img src="images/btn-left.svg" alt="btn-left" /></button>
                   <button className='pages-item'>1</button>
