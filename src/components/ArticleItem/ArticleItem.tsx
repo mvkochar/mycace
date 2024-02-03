@@ -1,5 +1,6 @@
 import React from 'react'
 import './ArticleItem.css'
+import { Link } from 'react-router-dom'
 
 type ArticleItemProps = {
     image: string
@@ -14,7 +15,7 @@ const ArticleItem = ({ image, title, desc }: ArticleItemProps) => {
             <div><img src={image} alt="article-image" /></div>
             <div className="article-item-title">{title}</div>
             <p className="article-item-desc">{desc}</p>
-            <a href="#" className="article-item-link">Читати далі</a>
+            <Link to="/article" className="article-item-link">Читати далі</Link>
         </div>
     )
 }

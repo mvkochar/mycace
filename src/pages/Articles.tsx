@@ -1,16 +1,45 @@
 import React from 'react'
-import './Articles.css' 
+import './Articles.css'
 import { ArticlesList } from '../components/ArticlesList/ArticlesList'
 import ArticleItem from '../components/ArticleItem/ArticleItem'
 
 const Articles = () => {
+  const [query, setQuery] = React.useState('')
+  const [isSearch, setIsSearch] = React.useState(false)
+  const [searchRes, setSearchRes] = React.useState(0)
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsSearch(false)
+    setQuery(event.target.value)
+  }
+
+  const handleSearch = (query: string) => {
+    let res = 0
+    if (query.length == 0) return
+    res = ArticlesList.filter((article) => article.title.toLowerCase().includes(query.toLowerCase())).length
+    setSearchRes(res)
+    setIsSearch(true)
+  }
+
   return (
     <main>
       <div className="wrapper">
         <form action="" className='home-main-fm' style={{ height: "50px" }}>
-          <input type="text" name='searchQuery' placeholder='Як приготувати класичний чізкейк' style={{ paddingTop: "4px" }} />
-          <button style={{ marginLeft: "103px" }}>Шукати</button>
+          <input
+            type="text"
+            name='searchQuery'
+            placeholder='Як приготувати класичний чізкейк'
+            value={query}
+            style={{paddingTop: "4px" }}
+            onChange={(event) => handleChange(event)}
+          />
+          <button type='button' style={{ marginLeft: "103px" }} onClick={()=>handleSearch(query)}>Шукати</button>
         </form>
+        <div className={isSearch ? "desserts-search-result d-f align-center" : "d-n"}>
+          <p className="desserts-search-query">"{query}"</p>
+          <button className='desserts-search-close' onClick={() => setIsSearch(false)}><img src="images/close.svg" alt="close" /></button>
+          <p className="desserts-search-count">{searchRes} статей.</p>
+        </div>
         <div className="articles-main d-f">
           <div className="articles-main-filters">
             <h3 className="filters-title">Цікаві та корисні статті</h3>
@@ -41,7 +70,17 @@ const Articles = () => {
           <div>
             <div className="articles-main-box d-f">
               {
-                ArticlesList.map((article)=>
+                isSearch 
+                ?ArticlesList.filter((article) => article.title.toLowerCase().includes(query.toLowerCase())).map((article) =>
+                <ArticleItem
+                  key={article.id}
+                  image={article.image}
+                  title={article.title}
+                  desc={article.desc}
+                />
+              )
+              :  
+                ArticlesList.map((article) =>
                   <ArticleItem
                     key={article.id}
                     image={article.image}
@@ -51,16 +90,16 @@ const Articles = () => {
                 )
               }
             </div>
-            <button className='desserts-more-btn' style={{ width: "98%" }}>'Більше статей'</button>
+            <button className='desserts-more-btn' style={{ width: "1180px" }}>'Більше статей'</button>
             <div className="desserts-main-pages d-f">
-                <button className='pages-action'><img src="images/btn-left.svg" alt="btn-left" /></button>
-                <button className='pages-item'>1</button>
-                <button className='pages-item'>2</button>
-                <button className='pages-item pages-item__active'>3</button>
-                <button className='pages-item'>4</button>
-                <button className='pages-more'>...</button>
-                <button className='pages-item'>15</button>
-                <button className='pages-action'><img src="images/btn-right.svg" alt="btn-right" /></button>
+              <button className='pages-action'><img src="images/btn-left.svg" alt="btn-left" /></button>
+              <button className='pages-item'>1</button>
+              <button className='pages-item'>2</button>
+              <button className='pages-item pages-item__active'>3</button>
+              <button className='pages-item'>4</button>
+              <button className='pages-more'>...</button>
+              <button className='pages-item'>15</button>
+              <button className='pages-action'><img src="images/btn-right.svg" alt="btn-right" /></button>
             </div>
           </div>
         </div>

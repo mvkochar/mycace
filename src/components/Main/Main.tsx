@@ -6,6 +6,7 @@ import Confectioners from '../../pages/Confectioners'
 import SingleProduct from '../../pages/SingleProduct'
 import Confectioner from '../../pages/Confectioner'
 import Articles from '../../pages/Articles'
+import Article from '../../pages/Article'
 
 const Main = () => {
   return (
@@ -33,6 +34,10 @@ const Main = () => {
         <Route
           path='articles'
           element={<Articles/>}
+        />
+        <Route
+          path='article'
+          element={<Article/>}
         />
     </Routes>
   )
