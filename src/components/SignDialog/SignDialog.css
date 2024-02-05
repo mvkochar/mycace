@@ -1,0 +1,109 @@
+.sign-dialog-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 30px;
+    color: #011936;
+}
+
+.sign-dialog-exit {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-dialog-fm {
+    margin-top: 60px;
+}
+
+.sign-dialog-fm label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #011936;
+}
+
+.sign-dialog-fm label span {
+    display: block;
+    font-size: 14px;
+    color: #84A6C2;
+}
+
+.sign-dialog-fm input {
+    width: 482px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border: 1px solid #84A6C2;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+    color: #84A6C2;
+}
+
+.sign-dialog-fm input::placeholder {
+     color: #84A6C2;
+}
+
+.sign-dialog-fm button {
+    width: 123px;
+    margin-left: 15px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    background-color: #FDAD6D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5E2D07;
+}
+
+.sign-dialog-social {
+    margin-top: 60px;
+}
+
+.sign-dialog-social .social-title {
+   font-size: 16px;
+   color: #011936;
+}
+
+.sign-dialog-social .social-box {
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.sign-dialog-social .social-link {
+    display: block;
+    width: 200px;
+    height: 40px;
+    padding-left: 78px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    background-color: #DCEBF8;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #43607C;
+}
+
+.sign-dialog-social .social-link:nth-child(1) {
+    background-image: url("/public/images/social-sign1.svg");
+    background-position: 45px center;
+}
+
+.sign-dialog-social .social-link:nth-child(2) {
+    background-image: url("/public/images/social-sign2.svg");
+    background-position: 45px center;
+} 
+
+.singn-dialog-change {
+    width: fit-content;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #84A6C2;
+}

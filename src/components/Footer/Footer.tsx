@@ -21,8 +21,15 @@ const style = {
 
 const Footer = () => {
   const [open, setOpen] = React.useState(false);
+  const [confirmation, setConfirmation] = React.useState(false)
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const handleOpenConfirmation = () => setConfirmation(true);
+  const handleCloseConfirmation = () => {
+    setConfirmation(false)
+    setOpen(false)
+  }
 
   return (
     <footer className='footer d-f jc-sb align-center'>
@@ -42,7 +49,6 @@ const Footer = () => {
         <button className="footer-connect" onClick={handleOpen}>Форма зворотнього зв’язку</button>
         <Modal
           open={open}
-          onClose={handleClose}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
@@ -69,7 +75,19 @@ const Footer = () => {
                 <label htmlFor="msg">Текст звернення</label>
                 <textarea name="msg" id="msg"></textarea>
               </div>
-              <button className='send-btn' onClick={handleClose}>Відправити звернення</button>
+              <button className='send-btn' type='button' onClick={handleOpenConfirmation}>Відправити звернення</button>
+              <Modal
+                open={confirmation}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+              >
+                <Box sx={style}>
+                   <div className="modal-confirm-img"><img src="images/confirm.svg" alt="confirm" /></div>
+                   <div className="modal-confirm-title">Дякуємо за звернення!</div> 
+                   <p className="modal-confirm-desc">Ми постараємося відповісти вам як можна скоріше</p>
+                   <button className='modal-confirm-btn' onClick={handleCloseConfirmation}>Зрозуміло</button> 
+                </Box>
+              </Modal>
               <button className='cancel-btn' onClick={handleClose}>Скасувати</button>
             </form>
           </Box>

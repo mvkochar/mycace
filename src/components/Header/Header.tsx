@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
+import SignDialog from '../SignDialog/SignDialog'
 
 
 
 const Header = () => {
+   
     return (
         <header className='header d-f jc-sb align-center'>
             <div className='d-f align-center'>
@@ -26,7 +28,7 @@ const Header = () => {
             </nav>
             <div className="header-actions d-f align-center">
                 <button className='header-actions-info'><img src="images/info.svg" alt="Info" /></button>
-                <a href="#" className="header-actions-account">Увійти</a>
+                <SignDialog/>
             </div>
 
         </header>

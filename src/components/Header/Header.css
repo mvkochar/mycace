@@ -57,8 +57,10 @@
     padding-left: 32px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: url("/public/images/account.svg") no-repeat;
+    background: transparent url("/public/images/account.svg") no-repeat;
     background-position: 0;
+    border: none;
+    cursor: pointer;
     font-size: 16px;
     color: #43607C;
 }
