@@ -15,7 +15,8 @@
     margin-top: 60px;
 }
 
-.sign-dialog-fm label {
+.sign-dialog-fm label,
+.reg-buyer-fm label {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
@@ -23,13 +24,14 @@
     color: #011936;
 }
 
-.sign-dialog-fm label span {
+.sign-dialog-fm label span,
+.reg-buyer-fm label span {
     display: block;
     font-size: 14px;
     color: #84A6C2;
 }
 
-.sign-dialog-fm input {
+.sign-dialog-fm input, .reg-buyer-fm input  {
     width: 482px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -42,7 +44,7 @@
 }
 
 .sign-dialog-fm input::placeholder {
-     color: #84A6C2;
+    color: #84A6C2;
 }
 
 .sign-dialog-fm button {
@@ -64,8 +66,8 @@
 }
 
 .sign-dialog-social .social-title {
-   font-size: 16px;
-   color: #011936;
+    font-size: 16px;
+    color: #011936;
 }
 
 .sign-dialog-social .social-box {
@@ -95,7 +97,7 @@
 .sign-dialog-social .social-link:nth-child(2) {
     background-image: url("/public/images/social-sign2.svg");
     background-position: 45px center;
-} 
+}
 
 .singn-dialog-change {
     width: fit-content;
@@ -107,3 +109,85 @@
     text-decoration: underline;
     color: #84A6C2;
 }
+
+.registration-main-item {
+    max-width: 620px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 49px;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+
+.registration-main-item:nth-child(2) {
+    margin-top: 40px;
+    background-color: #DCEBF8;
+}
+
+.registration-main-item:nth-child(3) {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: #FFE2CA;
+}
+
+.registration-main-item .reg-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+
+.registration-main-item .reg-subtitle {
+    font-size: 14px;
+}
+
+.registration-main-item:nth-child(2) .reg-title,
+.registration-main-item:nth-child(2) .reg-subtitle {
+    color: #43607C;
+}
+
+.registration-main-item:nth-child(3) .reg-title,
+.registration-main-item:nth-child(3) .reg-subtitle {
+    color: #5E2D07;
+}
+
+.registration-main-item .reg-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.registration-main-item:nth-child(3) .reg-btn svg path {
+    fill: #5E2D07;
+}
+
+.reg-buyer-fm {
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.reg-buyer-fm .fname-block input {
+    width: 620px;
+}
+
+.reg-buyer-fm .phone-block {
+    align-items: last baseline;
+    gap: 15px;
+}
+
+.reg-buyer-send {
+    display: block;
+    width: 123px;
+    height: 40px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    background-color: #FDAD6D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #5E2D07;
+}
+
