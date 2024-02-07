@@ -16,7 +16,8 @@
 }
 
 .sign-dialog-fm label,
-.reg-buyer-fm label {
+.reg-buyer-fm label,
+.confirm-title {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
@@ -31,7 +32,8 @@
     color: #84A6C2;
 }
 
-.sign-dialog-fm input, .reg-buyer-fm input  {
+.sign-dialog-fm input,
+.reg-buyer-fm input {
     width: 482px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -99,7 +101,8 @@
     background-position: 45px center;
 }
 
-.singn-dialog-change {
+.singn-dialog-change, .second-send-btn {
+    display: block;
     width: fit-content;
     margin-top: 20px;
     background-color: transparent;
@@ -191,3 +194,47 @@
     color: #5E2D07;
 }
 
+.confirm-title {
+    margin-top: 40px;
+}
+
+.confirm-code {
+    margin-top: 20px;
+}
+
+.confirm-code-item {
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #84A6C2;
+    outline: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #43607C;
+}
+
+.confirm-code-item:nth-child(3) {
+    margin-right: 30px;
+}
+
+.confirm-code-item:nth-child(6) {
+    margin-right: 0;
+}
+
+.second-send-btn {
+    margin-top: 40px;
+}
+
+.cofirm-link {
+    display: block;
+    width: 250px;
+    margin-top: 10px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    background-color: #FDAD6D;
+    border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #5E2D07;
+}

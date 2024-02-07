@@ -4,8 +4,11 @@ import { TagsList } from "../components/TagsList/TagsList"
 import Tag from '../components/Tag/Tag'
 import { CakesHomeList, CupcakesHomeList } from '../components/ProductsList/ProductsList'
 import ProductItem from '../components/ProductItem/ProductItem'
+import SignDialog from '../components/SignDialog/SignDialog'
 
 const Home = () => {
+  const [isReg, setIsReg] = React.useState(false)
+
   return (
     <main>
       <div className="wrapper">
@@ -117,8 +120,9 @@ const Home = () => {
         <p className="home-registration-desc">
           Реєструйся як кондитер, викладай фото своїх смаколиків та отримуй замовлення через MyCake
         </p>
-        <button className='home-registration-btn'>Зареєструватися як кондитер</button>
+        <button className='home-registration-btn' onClick={()=>setIsReg(true)}>Зареєструватися як кондитер</button>
       </div>
+      {isReg ? <SignDialog screenType={5} showSignBtn={false} /> : null}
       <div className="wrapper">
         <div className="home-bl">
           <div className="d-f jc-sb">
