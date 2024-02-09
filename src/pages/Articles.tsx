@@ -3,10 +3,19 @@ import './Articles.css'
 import { ArticlesList } from '../components/ArticlesList/ArticlesList'
 import ArticleItem from '../components/ArticleItem/ArticleItem'
 
-const Articles = () => {
+type ArticlesProps = {
+  handleHeaderType: (headerId: number) => void;
+}
+
+const Articles = ({handleHeaderType}:ArticlesProps) => {
   const [query, setQuery] = React.useState('')
   const [isSearch, setIsSearch] = React.useState(false)
   const [searchRes, setSearchRes] = React.useState(0)
+
+  React.useEffect(() => {
+    handleHeaderType(1)
+  
+  }, []);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setIsSearch(false)

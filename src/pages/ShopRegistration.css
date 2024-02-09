@@ -1,0 +1,30 @@
+.shop-reg-main {
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.shop-reg-msg {
+    width: 290px;
+    padding: 20px;
+    background-color: #DCEBF8;
+    border-radius: 10px;
+}
+
+.reg-msg-title,
+.reg-msg-desc {
+    font-size: 16px;
+    color: #43607C;
+}
+
+.reg-msg-title {
+    font-weight: 700;
+}
+
+.reg-msg-desc {
+    margin-top: 20px;
+}
+
+.shop-reg-polygon {
+    margin-top: -9px;
+    margin-left: 10px;
+}

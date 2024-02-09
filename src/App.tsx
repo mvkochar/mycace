@@ -5,10 +5,14 @@ import Footer from './components/Footer/Footer'
 
 
 const App = () => {
+  const [headerType, setHeaderType] = React.useState(1)
+
+  const handleHeaderType = (headerId: number ) => setHeaderType(headerId)
+
   return (
     <>
-      <Header />
-      <Main />
+      <Header headerId={headerType} />
+      <Main handleHeaderType ={handleHeaderType}/>
       <Footer />
     </>
   )

@@ -5,7 +5,15 @@ import ConfectionerItem from '../components/ConfectionerItem/ConfectionerItem'
 import ProductItem from '../components/ProductItem/ProductItem'
 import { DessertsList } from '../components/ProductsList/ProductsList'
 
-const Confectioners = () => {
+type ConfectionersProps = {
+    handleHeaderType: (headerId: number) => void;
+}
+
+const Confectioners = ({ handleHeaderType }: ConfectionersProps) => {
+
+    React.useEffect(() => {
+        handleHeaderType(1)
+    }, []);
 
     const findProduct = (productTitle: string) => {
         const product = DessertsList.filter((dessert) => dessert.title.toLowerCase() === productTitle.toLowerCase())[0]
@@ -22,9 +30,9 @@ const Confectioners = () => {
 
     return (
         <div className='wrapper'>
-            <form action="" className='home-main-fm'>
+            <form action="" className='home-main-fm' style={{height: "50px"}}>
                 <input type="text" style={{ paddingTop: "4px" }} />
-                <button style={{ marginLeft: "103px" }}>Шукати</button>
+                <button type='button' style={{ marginLeft: "103px" }}>Шукати</button>
             </form>
             <div className="confectioners-tags desserts-main-tags  d-f">
                 <Tag title='Усі' isActive={true} />

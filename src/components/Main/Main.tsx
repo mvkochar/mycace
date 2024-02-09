@@ -7,21 +7,27 @@ import SingleProduct from '../../pages/SingleProduct'
 import Confectioner from '../../pages/Confectioner'
 import Articles from '../../pages/Articles'
 import Article from '../../pages/Article'
+import ShopRegistration from '../../pages/ShopRegistration'
 
-const Main = () => {
+
+type  MainProps = {
+  handleHeaderType: (headerId: number) => void;
+}
+
+const Main = ({handleHeaderType}:MainProps) => {
   return (
     <Routes>
         <Route
             path='/'
-            element={<Home/>}
+            element={<Home handleHeaderType={handleHeaderType}/>}
         /> 
         <Route
           path='desserts'
-          element={<Desserts/>}
+          element={<Desserts handleHeaderType={handleHeaderType}/>}
         />
         <Route
           path='confectioners'
-          element={<Confectioners/>}
+          element={<Confectioners handleHeaderType={handleHeaderType}/>}
         />
         <Route
           path='product'
@@ -33,11 +39,15 @@ const Main = () => {
         />
         <Route
           path='articles'
-          element={<Articles/>}
+          element={<Articles handleHeaderType={handleHeaderType}/>}
         />
         <Route
           path='article'
           element={<Article/>}
+        />
+        <Route
+          path='shop-registration'
+          element={<ShopRegistration handleHeaderType={handleHeaderType}/>}
         />
     </Routes>
   )

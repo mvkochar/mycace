@@ -226,15 +226,23 @@
     margin-top: 40px;
 }
 
-.cofirm-link {
+.cofirm-btn {
     display: block;
     width: 250px;
     margin-top: 10px;
     padding-top: 10.5px;
     padding-bottom: 10.5px;
     background-color: #FDAD6D;
+    border: none;
     border-radius: 50px;
+    cursor: pointer;
     font-size: 16px;
-    text-align: center;
     color: #5E2D07;
+}
+
+.confirm-wrong-code {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #DC143C;
 }

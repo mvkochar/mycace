@@ -6,8 +6,17 @@ import { CakesHomeList, CupcakesHomeList } from '../components/ProductsList/Prod
 import ProductItem from '../components/ProductItem/ProductItem'
 import SignDialog from '../components/SignDialog/SignDialog'
 
-const Home = () => {
+type HomeProps = {
+  handleHeaderType: (headerId: number) => void;
+}
+
+const Home = ({handleHeaderType}:HomeProps) => {
   const [isReg, setIsReg] = React.useState(false)
+
+  React.useEffect(() => {
+    handleHeaderType(1)
+  
+  }, []);
 
   return (
     <main>

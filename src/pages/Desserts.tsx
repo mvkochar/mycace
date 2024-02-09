@@ -4,7 +4,11 @@ import Tag from '../components/Tag/Tag'
 import { DessertsList } from '../components/ProductsList/ProductsList'
 import ProductItem from '../components/ProductItem/ProductItem'
 
-const Desserts = () => {
+type DessertsProps = {
+  handleHeaderType: (headerId: number) => void;
+}
+
+const Desserts = ({handleHeaderType}:DessertsProps) => {
 
   const [moreProducts, setMoreProducts] = React.useState(false)
   const [query, setQuery] = React.useState('')
@@ -29,6 +33,11 @@ const Desserts = () => {
     setSearchRes(res)
     setIsSearch(true)
   }
+
+  React.useEffect(() => {
+    handleHeaderType(1)
+  
+  }, []);
 
   return (
     <div className="wrapper">

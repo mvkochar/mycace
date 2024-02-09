@@ -25,7 +25,19 @@ const SignDialog = ({ screenType = 2, showSignBtn = true }: SignDialogProps) => 
     const [open, setOpen] = React.useState(!showSignBtn);
     const [screen, setScreen] = React.useState(screenType);
     const [codeOne, setCodeOne] = React.useState("")
-    
+    const [codeTwo, setCodeTwo] = React.useState("")
+    const [codeThree, setCodeThree] = React.useState("")
+    const [codeFour, setCodeFour] = React.useState("")
+    const [codeFive, setCodeFive] = React.useState("")
+    const [codeSix, setCodeSix] = React.useState("")
+    const [isWrongCode, setIsWrongCode] = React.useState(false)
+
+    const confirmCode = "XLS169"
+
+    React.useEffect(() => {
+        setIsWrongCode(false)
+      }, []);
+
 
     const handleOpen = () => setOpen(true);
     const handleClose = () => {
@@ -37,6 +49,24 @@ const SignDialog = ({ screenType = 2, showSignBtn = true }: SignDialogProps) => 
         setScreen((prevState) => {
             return prevState === 2 ? 1 : 2
         })
+    }
+
+
+    const handleConfirm = () => {
+        let inputCode = codeOne + codeTwo + codeThree + codeFour + codeFive + codeSix
+
+        if (inputCode !== confirmCode)  setIsWrongCode(true)
+        else {
+            setIsWrongCode(false)
+            window.location.assign('/shop-registration')
+        } 
+         
+        setCodeOne("")
+        setCodeTwo("")
+        setCodeThree("")
+        setCodeFour("")
+        setCodeFive("")
+        setCodeSix("") 
     }
 
     const regMain = () => {
@@ -180,7 +210,7 @@ const SignDialog = ({ screenType = 2, showSignBtn = true }: SignDialogProps) => 
         )
     }
 
-    const confirmPhone = () => {                
+    const confirmPhone = () => {
         return (
             <>
                 <div className="d-f jc-sb">
@@ -189,18 +219,34 @@ const SignDialog = ({ screenType = 2, showSignBtn = true }: SignDialogProps) => 
                 </div>
                 <p className="confirm-title">Введіть код з повідомлення</p>
                 <div className="confirm-code d-f">
-                    <input className='confirm-code-item' 
-                        type='text' name='codeOne' value={codeOne} 
+                    <input className='confirm-code-item'
+                        type='text' name='codeOne' value={codeOne}
                         onChange={(event) => { setCodeOne(event.target.value[0]); }}>
                     </input>
-                    <div className='confirm-code-item'></div>
-                    <div className='confirm-code-item'></div>
-                    <div className='confirm-code-item'></div>
-                    <div className='confirm-code-item'></div>
-                    <div className='confirm-code-item'></div>
+                    <input className='confirm-code-item'
+                        type='text' name='codeTwo' value={codeTwo}
+                        onChange={(event) => { setCodeTwo(event.target.value[0]); }}>
+                    </input>
+                    <input className='confirm-code-item'
+                        type='text' name='codeThree' value={codeThree}
+                        onChange={(event) => { setCodeThree(event.target.value[0]); }}>
+                    </input>
+                    <input className='confirm-code-item'
+                        type='text' name='codeFour' value={codeFour}
+                        onChange={(event) => { setCodeFour(event.target.value[0]); }}>
+                    </input>
+                    <input className='confirm-code-item'
+                        type='text' name='codeFive' value={codeFive}
+                        onChange={(event) => { setCodeFive(event.target.value[0]); }}>
+                    </input>
+                    <input className='confirm-code-item'
+                        type='text' name='codeSix' value={codeSix}
+                        onChange={(event) => { setCodeSix(event.target.value[0]); }}>
+                    </input>
                 </div>
+                <div className={isWrongCode ? "confirm-wrong-code" : "d-n"}>Wrong Code!</div>
                 <button className='second-send-btn'>Надіслати повторно</button>
-                <a href="" className="cofirm-link">Підтвердити</a>
+                <button className="cofirm-btn" onClick={handleConfirm}>Підтвердити</button>
             </>
         )
     }
