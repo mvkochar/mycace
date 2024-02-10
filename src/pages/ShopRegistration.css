@@ -28,3 +28,109 @@
     margin-top: -9px;
     margin-left: 10px;
 }
+
+.shop-reg-fm {
+    flex-direction: column;
+    gap: 60px;
+}
+
+.form-bl-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #011936;
+}
+
+.form-bl-desc {
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #84A6C2;
+}
+
+.shop-reg-fm .add-photo-btn {
+    width: 224px;
+    margin-top: 20px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    padding-left: 20px;
+    background: transparent url("/public/images/add-photo.svg") no-repeat;
+    background-position: 22.5px;
+    border: 2px solid #A63A50;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #A63A50;
+}
+
+.form-bl-label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #011936;
+}
+
+.shop-reg-fm input {
+    display: block;
+    width: 1152px;
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border: 1px solid #DFDFDF;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+    color: #43607C;
+}
+
+.shop-reg-fm input::placeholder {
+    color: #43607C;
+}
+
+.shop-reg-fm textarea {
+    width: 1152px;
+    height: 68px;
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border: 1px solid #DFDFDF;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    color: #43607C;
+}
+
+.shop-reg-fm .add-contact-btn {
+    width: 1152px;
+    margin-top: 20px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    padding-left: 55px;
+    background: #FFF2F2 url("/public/images/add_contact.svg") no-repeat;
+    background-position: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    color: #8E4A4E;
+}
+
+.save-btn {
+    display: block;
+    align-self: flex-end;
+    width: 350px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: #A63A50;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
