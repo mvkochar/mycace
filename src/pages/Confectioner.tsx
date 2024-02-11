@@ -21,12 +21,12 @@ const style = {
 
 const Confectioner = () => {
   const [open, setOpen] = React.useState(false)
-  const [tab, setTab] = React.useState(2)
+  const [tab, setTab] = React.useState(1)
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const findProduct = (productTitle: string) => {
-    const product = DessertsList.filter((dessert) => dessert.title.toLowerCase() === productTitle.toLowerCase())[0]
+  const product = DessertsList.filter((dessert) => dessert.title.toLowerCase() === productTitle.toLowerCase())[0]
 
     return (
       <ProductItem
@@ -41,9 +41,9 @@ const Confectioner = () => {
   return (
     <main>
       <div className="wrapper">
-        <form action="" className='home-main-fm' style={{ height: "50px" }}>
+        <form action="" className={tab === 2 ? 'home-main-fm' : 'd-n'} style={{ height: "50px" }}>
           <input type="text" placeholder='Шоколадний торт з квітами' style={{ paddingTop: "4px" }} />
-          <button style={{ marginLeft: "103px" }}>Шукати</button>
+          <button type='button' style={{ marginLeft: "103px" }}>Шукати</button>
         </form>
         <div className="confectioner-main d-f">
           <div>
